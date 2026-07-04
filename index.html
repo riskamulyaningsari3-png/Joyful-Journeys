@@ -123,6 +123,61 @@
             margin-top: 0.2rem;
         }
 
+        /* Featured Portfolio Section */
+        .portfolio-section {
+            padding: 5rem 5% 2rem 5%;
+        }
+
+        .portfolio-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            letter-spacing: -0.5px;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .villa-card {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .villa-image {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 4px;
+            background-color: #e5e5e5; 
+            margin-bottom: 1rem;
+        }
+
+        .villa-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.3rem;
+        }
+
+        .villa-name {
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+        }
+
+        .villa-price {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #0b5345;
+        }
+
+        .villa-location {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
         /* Process Section */
         .process-section {
             padding: 5rem 5%;
@@ -180,6 +235,7 @@
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.5rem; }
             .nav-links { display: none; }
+            .villa-image { height: 300px; }
         }
     </style>
 </head>
@@ -189,6 +245,7 @@
     <header>
         <div class="logo">joyfuljourneys<span>.management</span></div>
         <nav class="nav-links">
+            <a href="#portfolio">Our Stays</a>
             <a href="#how-it-works">How it works</a>
             <a href="https://wa.me/62881037700153" target="_blank">Contact</a>
         </nav>
@@ -214,6 +271,34 @@
         <div class="metric-card">
             <h3>&lt;15min</h3>
             <p>Response Time <span>Direct, instant communication</span></p>
+        </div>
+    </section>
+
+    <!-- Featured Properties Section -->
+    <section id="portfolio" class="portfolio-section">
+        <h2>Our Managed Portfolio</h2>
+        <div class="portfolio-grid">
+            
+            <!-- Property 1 -->
+            <div class="villa-card">
+                <img src="./villa-bedroom.png" alt="Joyful Journeys Bedroom Suite" class="villa-image">
+                <div class="villa-details">
+                    <span class="villa-name">The Cozy Sanctuary Suite</span>
+                    <span class="villa-price">Budget Friendly</span>
+                </div>
+                <span class="villa-location">Bali • Premium Pool-View Comfort</span>
+            </div>
+
+            <!-- Property 2 -->
+            <div class="villa-card">
+                <img src="./villa-pool.png" alt="Joyful Journeys Private Plunge Pool" class="villa-image">
+                <div class="villa-details">
+                    <span class="villa-name">The Private Plunge Courtyard</span>
+                    <span class="villa-price">Budget Friendly</span>
+                </div>
+                <span class="villa-location">Bali • Comfortable Open-Air Living</span>
+            </div>
+
         </div>
     </section>
 
