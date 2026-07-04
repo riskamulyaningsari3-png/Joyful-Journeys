@@ -23,19 +23,16 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 2rem 5%;
+            padding: 1.5rem 5%;
             background-color: #faf9f6;
         }
 
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-            text-transform: lowercase;
-        }
-
-        .logo span {
-            color: #0b5345;
+        /* Logo styling for your uploaded image */
+        .logo-img {
+            height: 50px; /* Adjust this height to make your logo bigger or smaller */
+            width: auto;
+            object-fit: contain;
+            display: block;
         }
 
         .nav-links a {
@@ -236,6 +233,7 @@
             .hero h1 { font-size: 2.5rem; }
             .nav-links { display: none; }
             .villa-image { height: 300px; }
+            .logo-img { height: 40px; }
         }
     </style>
 </head>
@@ -243,7 +241,8 @@
 
     <!-- Navigation Bar -->
     <header>
-        <div class="logo">joyfuljourneys<span>.management</span></div>
+        <!-- This line links to your uploaded logo image -->
+        <img src="https://riskamulyaningsari3-png.github.io/Joyful-Journeys/logo.png" alt="Joyful Journeys Management Logo" class="logo-img">
         <nav class="nav-links">
             <a href="#portfolio">Our Stays</a>
             <a href="#how-it-works">How it works</a>
@@ -281,7 +280,7 @@
             
             <!-- Property 1 -->
             <div class="villa-card">
-                <img src="./villa-bedroom.png" alt="Joyful Journeys Bedroom Suite" class="villa-image">
+                <img src="https://riskamulyaningsari3-png.github.io/Joyful-Journeys/villa-bedroom.png" alt="Joyful Journeys Bedroom Suite" class="villa-image">
                 <div class="villa-details">
                     <span class="villa-name">The Cozy Sanctuary Suite</span>
                     <span class="villa-price">Budget Friendly</span>
@@ -291,7 +290,7 @@
 
             <!-- Property 2 -->
             <div class="villa-card">
-                <img src="./villa-pool.png" alt="Joyful Journeys Private Plunge Pool" class="villa-image">
+                <img src="https://riskamulyaningsari3-png.github.io/Joyful-Journeys/villa-pool.png" alt="Joyful Journeys Private Plunge Pool" class="villa-image">
                 <div class="villa-details">
                     <span class="villa-name">The Private Plunge Courtyard</span>
                     <span class="villa-price">Budget Friendly</span>
